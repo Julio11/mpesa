@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>M-Pesa Self-registration Portal</title>
+    <!-- endinject -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+
+<body class="sidebar-toggle-display sidebar-hidden">
+<div class="container-scroller">
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper content-wrapper">
+        <!-- partial -->
+        <div class="main-panel disable-select">
+            <div class="row mt-2">
+                <div class="col-lg-4 col-md-6 offset-lg-4 offset-md-3">
+                    <div class="border-bottom text-center">
+                        <a href="" ><img width="130" src="assets/images/logo.png" alt="logo"/></a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 offset-lg-4 offset-md-3 mb-5">
+                    <form class="forms-sample" id="applicationForm" method="post" action="#">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" class="form-control required" style="border-radius: 25px; padding: 0.5rem 0.81rem;" id="name" name="name" value="" placeholder="Nome">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="surname">Apelido</label>
+                                    <input type="text" class="form-control required" style="border-radius: 25px; padding: 0.5rem 0.81rem;" id="surname" name="surname" value="" placeholder="Apelido">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="birthday">Data de Nascimento</label>
+                                    <input class="form-control" id="birthday" name="birthday" placeholder="dd/mm/yyyy" value="" style="border-radius: 25px; padding: 0.5rem 0.81rem;" data-inputmask="'alias': 'date'"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="currentResidence">Tipo de documento</label>
+                                    <select style="border-radius: 25px; padding: 0.5rem 0.81rem; -webkit-appearance: none;" class="form-control" id="documentType" name="documentType">
+                                        <option selected value="BI">Bilhete de Identidade (BI)</option>
+                                        <option value="Carta de Condução">Carta de Condução</option>
+                                        <option style="display: none" value="Cartão de Eleitor">Cartão de Eleitor</option>
+                                        <option style="display: none" value="Cartão de Combatente">Cartão de Combatente</option>
+                                        <option style="display: none" value="Cartão de Desmobilizado">Cartão de Desmobilizado</option>
+                                        <option style="display: none" value="Cartão de Recenceamento Militar">Cartão de Recenceamento Militar</option>
+                                        <option style="display: none" value="DIRE">DIRE</option>
+                                        <option style="display: none" value="Identificação de Refugiados">Identificação de Refugiados</option>
+                                        <option value="Passaporte">Passaporte</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="currentPosition">Número do documento</label>
+                                    <input type="text" class="form-control" style="border-radius: 25px; padding: 0.5rem 0.81rem;" id="documentoNumber" name="documentoNumber" value="" placeholder="Número do documento de identificação">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group" id="data_5">
+                                    <label for="phoneNumber">Número de telefone</label>
+                                    <div class="input-group input-group-sm">
+                                        <input disabled type="text" style="width: 30%; border-radius: 25px 0px 0px 25px; padding: 0.5rem 0.70rem;" id="phoneCode" name="phoneCode" value="258" class="form-control text-center">
+                                        <input maxlength="9" type="text" style="width: 70%; border-radius: 0px 25px 25px 0px; padding: 0.5rem 0.70rem;" data-inputmask="'alias': 'phoneplusnumber'" id="phoneNumber" name="phoneNumber" value="" class="form-control text-left">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                            </div>
+                        </div>
+                        <button type="button" id="submitForm" class="btn btn-sm btn-primary mr-2 text-center">Registar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="assets/vendors/js/vendor.bundle.base.js"></script>
+<script src="assets/vendors/js/vendor.bundle.addons.js"></script>
+<script src="assets/js/form-validation.js"></script>
+<script src="assets/js/alerts.js"></script>
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.11.0.min.js'></script>
+<script src="assets/js/main.js"></script>
+
+<!-- End custom js for this page-->
+<!-- End custom js for this page-->
+</body>
+
+</html>
